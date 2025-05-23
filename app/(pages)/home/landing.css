@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* landing-container1 - landing-container2 */
+.landing-container1 {
+  @apply flex justify-center items-center h-full;
+}
+.landing-container2 {
+  @apply flex flex-col w-full h-full relative;
+}
+/* info */
+.landing-container2 .info {
+  @apply flex flex-col items-end gap-10 w-full text-right px-32 pt-32 pb-20 text-white;
+}
+.landing-container2 .main-title {
+  @apply text-[72px];
+}
+.landing-container2 .sub-title {
+  @apply text-[40px];
+}
+.landing-container2 .custom-btn {
+  @apply flex justify-center items-center gap-2 p-1 text-[16px] rounded-full w-[120px] hover:cursor-pointer text-black bg-[#FFBF00];
+}
+/* info-viewer */
+.landing-container2 .info-viewer {
+  @apply flex justify-between w-full gap-5 mt-20 items-center;
+}
+.landing-container2 .info-viewer .view1,
+.view2,
+.view3,
+.view4 {
+  @apply flex flex-col justify-center items-end rounded-sm w-[338px] h-[187px] p-5 bg-[#008062]/70;
+}
+.landing-container2 .info-viewer .date {
+  @apply text-[21px];
+}
+.landing-container2 .info-viewer .main-title {
+  @apply text-[38px];
+}
+.landing-container2 .info-viewer .sub-title {
+  @apply text-[21px];
+}

@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+/* selectedHorse-container1 - selectedHorse-container2 */
+.selectedHorse-container1 {
+  @apply flex justify-center items-center;
+}
+.selectedHorse-container2 {
+  @apply flex flex-col items-end gap-10 px-32 w-full py-[62px] bg-[#F2F2F2] text-black;
+}
+/* selectedHorse-sec1 */
+.selectedHorse-sec1 {
+  @apply flex justify-end items-center gap-5 w-full;
+}
+.selectedHorse-sec1 .title {
+  @apply flex justify-end items-center gap-5 w-full;
+}
+.selectedHorse-sec1 .number {
+  @apply flex justify-center items-center w-[60px] h-[60px] rounded-full text-[30px] text-[#FFBF00] bg-[#008062];
+}
+/* selectedHorse-sec2 */
+.selectedHorse-sec2 {
+  @apply flex justify-between items-center gap-5 w-full text-right text-[20px];
+}
+.selectedHorse-sec2 .info1,
+.info2,
+.info3 {
+  @apply flex flex-col gap-1;
+}
+.selectedHorse-sec2 .header {
+  @apply flex justify-center items-center rounded-full min-w-[338px]  h-[65px];
+}
+.selectedHorse-sec2 .row {
+  @apply flex justify-end items-center rounded-full px-5 text-[20px] min-w-[338px] h-[42px] bg-white;
+}
+.selectedHorse-sec2 .row span {
+  @apply min-w-[109px];
+}
+/* selectedHorse-sec2 info1*/
+.selectedHorse-sec2 .info1 {
+  @apply flex;
+}
+.selectedHorse-sec2 .info1 .header {
+  @apply flex justify-around items-center text-[20px] font-bold w-[692px];
+}
+.selectedHorse-sec2 .info1 .row {
+  @apply w-[692px] text-[#008062];
+}
+.selectedHorse-sec2 .info1 .row span:nth-child(7) {
+  @apply text-black;
+}
+/* selectedHorse-sec2 info2*/
+.selectedHorse-sec2 .info2 {
+  @apply flex;
+}
+.selectedHorse-sec2 .info2 .header {
+  @apply flex flex-col items-end w-[338px] text-[18px] px-5 text-[#008062] bg-white;
+}
+.selectedHorse-sec2 .info2 .row span:nth-child(1) {
+  @apply text-[#008062];
+}
+/* selectedHorse-sec2 info3*/
+.selectedHorse-sec2 .info3 {
+  @apply flex;
+}
+.selectedHorse-sec2 .info3 .header {
+  @apply text-[22px] bg-black text-white;
+}
+.selectedHorse-sec2 .info3 .row span:nth-child(1) {
+  @apply text-[#008062];
+}

@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+/* racing-container1 - racing-container2 */
+.racing-container1 {
+  @apply flex justify-center items-center;
+}
+.racing-container2 {
+  @apply flex flex-col gap-5 px-32 py-10 w-full;
+}
+/* racing-sec1 */
+.racing-sec1 {
+  @apply flex justify-end;
+}
+.racing-sec1 .main-title {
+  @apply text-[61px] text-[#177245];
+}
+/* racing-sec2 */
+.racing-sec2 {
+  @apply flex justify-end items-center h-[294px];
+}
+/* racing-sec2 .table-body*/
+.racing-sec2 .table-body {
+  @apply flex justify-between h-full overflow-x-auto border-1 border-[#E3E3E3];
+  direction: rtl;
+}
+.racing-sec2 .table-cell {
+  @apply flex flex-col justify-start items-center py-3 h-full border-1 border-[#E3E3E3];
+}
+.racing-sec2 .table-cell .date {
+  @apply text-[57px] text-[#177245];
+}
+.racing-sec2 .table-cell .day {
+  @apply text-[21px] w-full text-center text-black border-b-1 border-[#E3E3E3];
+}
+.racing-sec2 .table-cell .race-container {
+  @apply flex flex-col justify-center items-center w-full h-[165px];
+}
+.racing-sec2 .table-cell .race {
+  @apply w-[40px] h-[40px] rounded-full border-[10px] m-3 hover:cursor-pointer border-[#177245];
+}
+.racing-sec2 .table-cell .race-details {
+  @apply flex flex-col justify-center items-end gap-3 w-[380px] rounded-lg shadow-2xl text-[20px] text-black bg-white border border-[#E3E3E3];
+  direction: ltr;
+}
+.racing-sec2 .table-cell .race-details .name {
+  @apply text-[27px] text-[#177245];
+}
+.racing-sec2 .table-cell .race-details .classification {
+  @apply text-[18px] text-[#177245];
+}
+.racing-sec2 .table-cell .race-details .dateTime {
+  @apply flex justify-end items-center gap-3 w-full text-[14px] text-black;
+}
+.racing-sec2 .table-cell .race-details .dateTime .date,
+.racing-sec2 .table-cell .race-details .dateTime .time {
+  @apply text-[14px] text-black;
+}
+.racing-sec2 .table-cell .race-details .distance {
+  @apply flex justify-end items-center gap-5 w-full;
+}
+.racing-sec2 .table-cell .race-details .type {
+  @apply flex justify-end items-center gap-5 w-full;
+}
+.racing-sec2 .table-cell .race-details .age {
+  @apply flex justify-end items-center gap-5 w-full;
+}
+.racing-sec2 .table-cell .race-details .award {
+  @apply flex justify-end items-center gap-5 w-full;
+}
+.racing-sec2 .table-cell .race-details .award .custom-btn {
+  @apply flex justify-center items-center gap-2 p-1 text-[16px] rounded-full w-[120px] hover:cursor-pointer text-black bg-[#FFBF00];
+}
+/* racing-sec2 .table-header*/
+.racing-sec2 .table-header {
+  @apply flex flex-col justify-between items-end w-1/4 h-full;
+}
+.racing-sec2 .table-header .year {
+  @apply text-[22px] text-black;
+}
+.racing-sec2 .table-header .month {
+  @apply text-[36px] text-black;
+}
+.racing-sec2 .table-header .controls {
+  @apply flex justify-center items-center gap-3;
+}
+.racing-sec2 .table-header .controls .prev,
+.next {
+  @apply hover:cursor-pointer;
+}
+.racing-sec2 .table-header .title {
+  @apply flex justify-center items-center w-full h-[163px] pb-3 text-[25px] text-[#177245] border-t-1 border-[#E3E3E3];
+}

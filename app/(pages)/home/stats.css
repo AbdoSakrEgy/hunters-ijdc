@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* stats-container1 - stats-container2 */
+.stats-container1 {
+  @apply flex justify-center items-center;
+}
+.stats-container2 {
+  @apply flex flex-col py-20 px-32 w-full;
+}
+/* row-title */
+.stats-container2 .row-title {
+  @apply flex justify-end items-center text-[34px] text-[#177245];
+}
+/* row-data*/
+.stats-container2 .row-data {
+  @apply flex justify-between items-center rounded-full w-full h-[91px] px-10 text-[14px] bg-[#F2F2F2] text-black;
+}
+.stats-container2 .row-data .info {
+  @apply flex flex-col items-end gap-1;
+}
+.stats-container2 .row-data .dataRounded1 {
+  @apply flex justify-center items-center w-[78px] h-[78px] text-[24px] rounded-full;
+}
+.stats-container2 .row-data .dataRounded2 {
+  @apply flex justify-around items-center w-[279px] h-[78px] text-[16px] rounded-full;
+}
+/* row-footer */
+.stats-container2 .row-footer {
+  @apply flex justify-between items-center gap-10 px-10 mt-10 rounded-full text-[15px] h-[49px] bg-[#177245] text-white;
+}
+.stats-container2 .row-footer .iconArrow {
+  @apply flex justify-center items-center w-[30px] h-[30px] rounded-full border-[3px] border-white;
+}

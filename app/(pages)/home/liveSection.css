@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+/* liveSection-container1 - liveSection-container2 */
+.liveSection-container1 {
+  @apply flex justify-center items-center;
+}
+.liveSection-container2 {
+  @apply flex flex-col gap-20 px-32 pt-40 pb-20 w-full h-[932px] bg-[#177245];
+}
+/* sec1 */
+.liveSection-sec1 {
+  @apply flex justify-between items-center rounded-full px-10 py-5 bg-white text-black;
+}
+.liveSection-sec1 .live {
+  @apply flex justify-center items-center gap-2 p-1 text-[16px] rounded-full w-[120px] hover:cursor-pointer text-white bg-[#FF0000];
+}
+.liveSection-sec1 .controlers {
+  @apply flex justify-end items-center gap-3;
+}
+.liveSection-sec1 .done {
+  @apply flex justify-center items-center gap-2 p-1 text-[16px] rounded-full w-[120px] hover:cursor-pointer text-black bg-[#FFBF00];
+}
+.liveSection-sec1 .prev {
+  @apply flex justify-center items-center gap-2 p-1 text-[16px] rounded-full w-[120px] hover:cursor-pointer border-2 border-[#F2F2F2];
+}
+.liveSection-sec1 .current {
+  @apply flex justify-center items-center gap-2 p-1 text-[16px] rounded-full w-[120px] hover:cursor-pointer border-2 border-[#F2F2F2];
+}
+.liveSection-sec1 .next {
+  @apply flex justify-center items-center gap-2 p-1 text-[16px] rounded-full w-[120px] hover:cursor-pointer border-2 border-[#F2F2F2];
+}
+.liveSection-sec1 .title {
+  @apply flex justify-center items-center gap-2 p-1 text-[16px] rounded-full w-[120px] hover:cursor-pointer border-2 border-[#F2F2F2];
+}
+/* sec2 */
+.liveSection-sec2 {
+  @apply flex justify-between items-center gap-5;
+}
+.liveSection-sec2 .horses {
+  @apply flex flex-col gap-10;
+}
+.liveSection-sec2 .horses .raceInfo {
+  @apply flex justify-end;
+}
+.liveSection-sec2 .horses .list {
+  @apply flex flex-col gap-5 h-[400px] overflow-y-auto;
+  direction: rtl;
+}
+.liveSection-sec2 .horses .list .horse1 {
+  @apply flex justify-start items-center gap-5 text-2xl p-1 w-[338px] h-[68px] rounded-full text-black;
+}
+.liveSection-sec2 .horses .raceCard {
+  @apply flex justify-center items-center gap-2 ml-20 p-1 text-[16px] rounded-full w-[120px] hover:cursor-pointer text-black bg-[#FFBF00];
+}
+.liveSection-sec2 .liveVideo {
+  @apply bg-white rounded-lg w-full;
+}
