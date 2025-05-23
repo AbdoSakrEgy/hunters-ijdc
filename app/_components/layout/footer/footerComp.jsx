@@ -1,7 +1,6 @@
 import Image from "next/image";
-import "./footerComp.css";
 import Link from "next/link";
-import { Icon } from "@iconify/react";
+import "./footerComp.css";
 
 export default function FooterComp() {
   return (
@@ -15,9 +14,9 @@ export default function FooterComp() {
             <div className="title text-[24px]">النشرة البريدية</div>
             <div className="subTitle text-[17px]">النص أو الوصف يكتب هنا</div>
             <div className="emailSec flex justify-end items-center gap-3">
-              <div className="send flex justify-center items-center rounded-lg w-[150px] h-[55px] bg-[#008062]">
+              <button className="send flex justify-center items-center rounded-lg w-[150px] h-[55px] bg-[#008062]">
                 إشترك
-              </div>
+              </button>
               <input
                 type="email"
                 className="emailBox w-[338px] h-[55px] rounded-xl text-black bg-white px-5"
