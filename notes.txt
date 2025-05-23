@@ -1,0 +1,11 @@
+-why you downloaded dasiyui package ?
+-you have to delete unused files try this link:
+    https://hunters-ijdc.vercel.app/globe.svg
+-using typescript is mush better
+-footer component should be in the layout (layout for shared components)
+-what is the difference between jsx and js
+-popup for calendar not as the ui
+
+-search for containers in tailwindcss ?
+-why u did not use ui package?
+-why home page is client side ?
