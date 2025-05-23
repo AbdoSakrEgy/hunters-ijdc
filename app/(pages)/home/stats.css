@@ -5,7 +5,7 @@
   @apply flex justify-center items-center;
 }
 .stats-container2 {
-  @apply flex flex-col py-20 px-32 w-full;
+  @apply max-[1700]:px-10 flex flex-col py-20 px-32 w-full overflow-x-scroll overflow-hidden;
 }
 /* row-title */
 .stats-container2 .row-title {
@@ -13,7 +13,7 @@
 }
 /* row-data*/
 .stats-container2 .row-data {
-  @apply flex justify-between items-center rounded-full w-full h-[91px] px-10 text-[14px] bg-[#F2F2F2] text-black;
+  @apply flex justify-between items-center rounded-full min-w-[1400px] h-[91px] px-10 text-[14px] bg-[#F2F2F2] text-black;
 }
 .stats-container2 .row-data .info {
   @apply flex flex-col items-end gap-1;
@@ -26,7 +26,7 @@
 }
 /* row-footer */
 .stats-container2 .row-footer {
-  @apply flex justify-between items-center gap-10 px-10 mt-10 rounded-full text-[15px] h-[49px] bg-[#177245] text-white;
+  @apply flex justify-between items-center gap-10 px-10 mt-10 rounded-full text-[15px] min-w-[1400px] h-[49px] bg-[#177245] text-white;
 }
 .stats-container2 .row-footer .iconArrow {
   @apply flex justify-center items-center w-[30px] h-[30px] rounded-full border-[3px] border-white;

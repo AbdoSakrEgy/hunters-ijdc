@@ -7,7 +7,7 @@ export default function FooterComp() {
   return (
     <main className="footerComp-container1 flex justify-center items-center">
       <main className="footerComp-container2 flex flex-col w-full text-white">
-        <div className="footerComp-sec1 flex justify-between items-center w-full py-20 px-32 bg-[#000000E6]">
+        <div className="max-[1700]:px-10 footerComp-sec1 flex justify-between items-center w-full py-20 px-32 bg-[#000000E6]">
           <div className="contact flex flex-col items-end gap-3">
             <div className="title text-[24px]">النشرة البريدية</div>
             <div className="subTitle text-[17px]">النص أو الوصف يكتب هنا</div>
@@ -101,7 +101,7 @@ export default function FooterComp() {
             </div>
           </div>
         </div>
-        <div className="footerComp-sec2 flex justify-between items-center h-[54px] px-32 bg-black">
+        <div className="max-[1700]:px-10  footerComp-sec2 flex justify-between items-center h-[54px] px-32 bg-black">
           <div className="text-[16px]text-white">
             سياسة الخصوصية | أحكام وشروط | ميثاق العملاء | ادوات الموقع
           </div>

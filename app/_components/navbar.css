@@ -5,7 +5,7 @@
   @apply flex justify-center items-center h-[133px] bg-[#008062] text-white;
 }
 .navbar-container2 {
-  @apply flex justify-between items-center px-32 w-full;
+  @apply max-[1700]:px-10 flex justify-between items-center px-32 w-full;
 }
 /* sec1 */
 .navbar-container1 .sec1 {
@@ -21,3 +21,13 @@
 /* =============================== mobile-design =============================== */
 /* =============================== mobile-design =============================== */
 /* =============================== mobile-design =============================== */
+@media (max-width: 1700px) {
+  .hide-on-small {
+    display: none !important;
+  }
+}
+@media (min-width: 1700px) {
+  .hide-on-larg {
+    display: none !important;
+  }
+}

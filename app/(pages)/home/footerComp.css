@@ -5,7 +5,7 @@
   @apply flex justify-center items-center;
 }
 .footerComp-container2 {
-  @apply flex flex-col pt-20 px-32 w-full bg-black text-white;
+  @apply max-[1700]:px-10 flex flex-col pt-20 px-32 w-full bg-black text-white;
 }
 /* footerComp-sec1 */
 .footerComp-sec1 {

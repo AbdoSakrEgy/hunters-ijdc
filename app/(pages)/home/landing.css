@@ -22,7 +22,7 @@
 }
 /* info-viewer */
 .landing-container2 .info-viewer {
-  @apply flex justify-between w-full gap-5 mt-20 items-center;
+  @apply flex justify-between w-full gap-5 mt-20 items-center flex-wrap;
 }
 .landing-container2 .info-viewer .view1,
 .view2,

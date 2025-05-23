@@ -5,7 +5,7 @@
   @apply flex justify-center items-center;
 }
 .selectedHorse-container2 {
-  @apply flex flex-col items-end gap-10 px-32 w-full py-[62px] bg-[#F2F2F2] text-black;
+  @apply max-[1700]:px-10 flex flex-col items-end gap-10 px-32 w-full py-[62px] bg-[#F2F2F2] text-black;
 }
 /* selectedHorse-sec1 */
 .selectedHorse-sec1 {
@@ -19,7 +19,7 @@
 }
 /* selectedHorse-sec2 */
 .selectedHorse-sec2 {
-  @apply flex justify-between items-center gap-5 w-full text-right text-[20px];
+  @apply flex flex-wrap justify-between items-center gap-5 w-full text-right text-[20px];
 }
 .selectedHorse-sec2 .info1,
 .info2,
@@ -27,7 +27,7 @@
   @apply flex flex-col gap-1;
 }
 .selectedHorse-sec2 .header {
-  @apply flex justify-center items-center rounded-full min-w-[338px]  h-[65px];
+  @apply flex justify-center items-center rounded-full min-w-[338px] h-[65px];
 }
 .selectedHorse-sec2 .row {
   @apply flex justify-end items-center rounded-full px-5 text-[20px] min-w-[338px] h-[42px] bg-white;
