@@ -3,16 +3,11 @@ import "./selectedHorse.css";
 
 export default function SelectedHorse() {
   return (
-    <main className="selectedHorse-container1">
+    <main className="selectedHorse-container1" data-aos="fade-up">
       <main className="selectedHorse-container2">
         <div className="selectedHorse-sec1">
           <div className="title">
-            <Image
-              src="/assets/saoudi.svg"
-              alt="img"
-              width={35}
-              height={35}
-            />
+            <Image src="/assets/saoudi.svg" alt="img" width={35} height={35} />
             <div className="text-[34px]">ساندى ستورم</div>
             <div className="number">03</div>
           </div>

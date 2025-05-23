@@ -5,7 +5,10 @@ import { Icon } from "@iconify/react";
 
 export default function FooterComp() {
   return (
-    <main className="footerComp-container1 flex justify-center items-center">
+    <main
+      className="footerComp-container1 flex justify-center items-center"
+      data-aos="fade-up"
+    >
       <main className="footerComp-container2 flex flex-col w-full text-white">
         <div className="max-[1700]:px-10 footerComp-sec1 flex justify-between items-center w-full py-20 px-32 bg-[#000000E6]">
           <div className="contact flex flex-col items-end gap-3">

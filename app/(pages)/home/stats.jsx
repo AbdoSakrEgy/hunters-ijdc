@@ -3,7 +3,7 @@ import "./stats.css";
 
 export default function Stats() {
   return (
-    <main className="stats-container1">
+    <main className="stats-container1" data-aos="fade-up">
       <main className="stats-container2">
         {/* row-title */}
         <div className="row-title">
@@ -57,7 +57,7 @@ export default function Stats() {
             </span>
           </div>
           <div className="info">
-            <span>M Gutierrez</span>
+            <span className="tracking-wider">M Gutierrez</span>
             <span>117|L|12-1</span>
           </div>
           <div className="dataRounded2 bg-[#EA3323]">
@@ -131,7 +131,7 @@ export default function Stats() {
             </span>
           </div>
           <div className="info">
-            <span>M Gutierrez</span>
+            <span className="tracking-wider">M Gutierrez</span>
             <span>117|L|12-1</span>
           </div>
           <div className="dataRounded2 bg-white">
@@ -205,7 +205,7 @@ export default function Stats() {
             </span>
           </div>
           <div className="info">
-            <span>M Gutierrez</span>
+            <span className="tracking-wider">M Gutierrez</span>
             <span>117|L|12-1</span>
           </div>
           <div className="dataRounded2 bg-[#0122F5] text-white">

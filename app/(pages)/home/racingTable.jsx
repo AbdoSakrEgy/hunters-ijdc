@@ -27,7 +27,7 @@ export default function RacingTable() {
   }
 
   return (
-    <main className="racing-container1">
+    <main className="racing-container1" data-aos="fade-up">
       <main className="racing-container2">
         <div className="racing-sec1">
           <div className="main-title">رزمانة السباقات</div>

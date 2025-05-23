@@ -3,7 +3,7 @@ import "./liveSection.css";
 
 export default function LiveSection() {
   return (
-    <main className="liveSection-container1 f">
+    <main className="liveSection-container1" data-aos="fade-up">
       <main className="liveSection-container2">
         <div className="liveSection-sec1">
           <div className="live">بث مباشر</div>
