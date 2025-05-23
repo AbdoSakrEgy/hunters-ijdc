@@ -80,7 +80,7 @@ export default function SelectedHorse() {
                 <span className="text-black">سجل</span> : 23 بداية : 0-1-16
                 &nbsp; 4.16 مليون دولار
               </div>
-              <div className="text-[13px]">
+              <div className="text-[11px]">
                 حصان مخصى | عمره 6 سنوات | فبراير | مولود فى ولاية كنتاكى
               </div>
             </div>

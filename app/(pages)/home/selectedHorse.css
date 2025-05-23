@@ -53,7 +53,7 @@
   @apply flex;
 }
 .selectedHorse-sec2 .info2 .header {
-  @apply flex flex-col items-end w-[338px] text-[18px] px-5 text-[#008062] bg-white;
+  @apply flex flex-col items-end w-[338px] text-[16px] px-5 text-[#008062] bg-white;
 }
 .selectedHorse-sec2 .info2 .row span:nth-child(1) {
   @apply text-[#008062];

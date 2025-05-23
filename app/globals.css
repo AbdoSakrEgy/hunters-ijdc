@@ -27,6 +27,15 @@
   }
 } */
 
+@font-face {
+  font-family: "CustomArabic";
+  src: url("/assets/fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "CustomArabic", sans-serif;
 }
