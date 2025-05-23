@@ -4,7 +4,7 @@ import LiveSection from "./liveSection";
 import RacingTable from "./racingTable";
 import SelectedHorse from "./selectedHorse";
 import Stats from "./stats";
-import FooterComp from "./footerComp";
+import FooterComp from "../../_components/layout/footer/footerComp";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -21,7 +21,6 @@ export default function Page() {
         <LiveSection />
         <SelectedHorse />
         <Stats />
-        <FooterComp />
       </main>
     </main>
   );
