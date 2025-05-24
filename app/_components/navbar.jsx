@@ -1,6 +1,7 @@
 import "./navbar.css";
 import Link from "next/link";
 import Image from "next/image";
+import "animate.css";
 
 export default function Navbar() {
   return (
@@ -64,7 +65,10 @@ export default function Navbar() {
               <Link href={`/about-us`} className="link hide-on-small">
                 عن ميدان
               </Link>
-              <Link href={`/home`} className="link">
+              <Link
+                href={`/home`}
+                className="link animate__animated animate__backInDown"
+              >
                 <Image
                   src="/assets/logo.svg"
                   alt="img"
@@ -86,34 +90,22 @@ export default function Navbar() {
         {/* Sidebar content here */}
         <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4 bg-[#008062] text-white">
           <li className="flex juctify-center items-center text-xl w-full">
-            <Link href={`/home`}>
-              الرئيسية
-            </Link>
+            <Link href={`/home`}>الرئيسية</Link>
           </li>
           <li className="flex juctify-center items-center text-xl w-full">
-            <Link href={`/about-us`}>
-              عن ميدان
-            </Link>
+            <Link href={`/about-us`}>عن ميدان</Link>
           </li>
           <li className="flex juctify-center items-center text-xl w-full">
-            <Link href={`/services`}>
-              الخدمات
-            </Link>
+            <Link href={`/services`}>الخدمات</Link>
           </li>
           <li className="flex juctify-center items-center text-xl w-full">
-            <Link href={`/competitions`}>
-              المسابقات
-            </Link>
+            <Link href={`/competitions`}>المسابقات</Link>
           </li>
           <li className="flex juctify-center items-center text-xl w-full">
-            <Link href={`/live-broadcast`}>
-              البث المباشر
-            </Link>
+            <Link href={`/live-broadcast`}>البث المباشر</Link>
           </li>
           <li className="flex juctify-center items-center text-xl w-full">
-            <Link href={`/contact-us`}>
-              اتصل بنا
-            </Link>
+            <Link href={`/contact-us`}>اتصل بنا</Link>
           </li>
           <li className="flex juctify-center items-center text-xl w-full mt-20">
             <div>

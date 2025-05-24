@@ -14,10 +14,14 @@ export default function Landing() {
   return (
     <main className="landing-container1 bg-[url(/assets/home-page/main-img.svg)] bg-cover">
       <main className="landing-container2">
-        <div className={`info${animate ? " animate" : ""}`}>
-          <div className="main-title">عنوان رئيسى</div>
-          <div className="sub-title">العنوان الفرعى هنا أو التفاصيل</div>
-          <div className="custom-btn">
+        <div className="info">
+          <div className="main-title animate__animated animate__backInRight">
+            عنوان رئيسى
+          </div>
+          <div className="sub-title animate__animated animate__backInRight animate__slow">
+            العنوان الفرعى هنا أو التفاصيل
+          </div>
+          <div className="custom-btn animate__animated animate__backInRight animate__slower">
             <Image
               src="/assets/icons/left-arrow.svg"
               alt="img"
@@ -26,23 +30,23 @@ export default function Landing() {
             />
             <div>إذهب إلى</div>
           </div>
-          <div className={`info-viewer${animate ? " animate" : ""}`}>
-            <div className="view1">
+          <div className="info-viewer">
+            <div className="view1 animate__animated animate__fadeInUp">
               <div className="date">20/3/2025</div>
               <div className="main-title">عنوان رئيسى</div>
               <div className="sub-title">العنوان الفرعى هنا أو التفاصيل</div>
             </div>
-            <div className="view2">
+            <div className="view2 animate__animated animate__fadeInUp">
               <div className="date">20/3/2025</div>
               <div className="main-title">عنوان رئيسى</div>
               <div className="sub-title">العنوان الفرعى هنا أو التفاصيل</div>
             </div>
-            <div className="view3">
+            <div className="view3 animate__animated animate__fadeInUp">
               <div className="date">20/3/2025</div>
               <div className="main-title">عنوان رئيسى</div>
               <div className="sub-title">العنوان الفرعى هنا أو التفاصيل</div>
             </div>
-            <div className="view4">
+            <div className="view4 animate__animated animate__fadeInUp">
               <div className="date">20/3/2025</div>
               <div className="main-title">عنوان رئيسى</div>
               <div className="sub-title">العنوان الفرعى هنا أو التفاصيل</div>
