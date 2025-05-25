@@ -1,16 +1,8 @@
 "use client";
 import "./landing.css";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 
 export default function Landing() {
-  const [animate, setAnimate] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setAnimate(true), 100); // slight delay for effect
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <main className="landing-container1 bg-[url(/assets/home-page/main-img.svg)] bg-cover">
       <main className="landing-container2">
@@ -36,17 +28,17 @@ export default function Landing() {
               <div className="main-title">عنوان رئيسى</div>
               <div className="sub-title">العنوان الفرعى هنا أو التفاصيل</div>
             </div>
-            <div className="view2 animate__animated animate__fadeInUp">
+            <div className="view2 animate__animated animate__fadeInUp ">
               <div className="date">20/3/2025</div>
               <div className="main-title">عنوان رئيسى</div>
               <div className="sub-title">العنوان الفرعى هنا أو التفاصيل</div>
             </div>
-            <div className="view3 animate__animated animate__fadeInUp">
+            <div className="view3 animate__animated animate__fadeInUp ">
               <div className="date">20/3/2025</div>
               <div className="main-title">عنوان رئيسى</div>
               <div className="sub-title">العنوان الفرعى هنا أو التفاصيل</div>
             </div>
-            <div className="view4 animate__animated animate__fadeInUp">
+            <div className="view4 animate__animated animate__fadeInUp ">
               <div className="date">20/3/2025</div>
               <div className="main-title">عنوان رئيسى</div>
               <div className="sub-title">العنوان الفرعى هنا أو التفاصيل</div>

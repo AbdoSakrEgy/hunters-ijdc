@@ -39,3 +39,18 @@
 .landing-container2 .info-viewer .sub-title {
   @apply text-[21px];
 }
+/* =================== animations =================== */
+/* =================== animations =================== */
+/* =================== animations =================== */
+.landing-container2 .info-viewer .view1 {
+  --animate-duration: 0.5s;
+}
+.landing-container2 .info-viewer .view2 {
+  --animate-duration: 0.8s;
+}
+.landing-container2 .info-viewer .view3 {
+  --animate-duration: 1s;
+}
+.landing-container2 .info-viewer .view4 {
+  --animate-duration: 1.5s;
+}
