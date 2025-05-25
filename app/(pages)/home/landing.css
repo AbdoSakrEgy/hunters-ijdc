@@ -9,7 +9,7 @@
 }
 /* info */
 .landing-container2 .info {
-  @apply flex flex-col items-end gap-10 w-full text-right px-32 pt-32 pb-20 text-white;
+  @apply max-[1700]:px-10 flex flex-col items-end gap-10 w-full text-right px-32 pt-32 pb-20 text-white;
 }
 .landing-container2 .main-title {
   @apply text-[72px];
@@ -38,6 +38,17 @@
 }
 .landing-container2 .info-viewer .sub-title {
   @apply text-[21px];
+}
+/* =================== moibile design =================== */
+/* =================== moibile design =================== */
+/* =================== moibile design =================== */
+@media (max-width: 1700px) {
+  .card-onSmall {
+    @apply !justify-between;
+  }
+  .text-onSmall {
+    @apply !text-sm;
+  }
 }
 /* =================== animations =================== */
 /* =================== animations =================== */

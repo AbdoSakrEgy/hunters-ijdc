@@ -19,7 +19,7 @@
 }
 /* selectedHorse-sec2 */
 .selectedHorse-sec2 {
-  @apply flex flex-wrap justify-between items-center gap-5 w-full text-right text-[20px];
+  @apply flex justify-between items-center gap-5 w-full text-right text-[20px];
 }
 .selectedHorse-sec2 .info1,
 .info2,
@@ -37,7 +37,7 @@
 }
 /* selectedHorse-sec2 info1*/
 .selectedHorse-sec2 .info1 {
-  @apply flex;
+  @apply w-full;
 }
 .selectedHorse-sec2 .info1 .header {
   @apply flex justify-around items-center text-[20px] font-bold w-[692px];
@@ -67,4 +67,24 @@
 }
 .selectedHorse-sec2 .info3 .row span:nth-child(1) {
   @apply text-[#008062];
+}
+/* =================== moibile design =================== */
+/* =================== moibile design =================== */
+/* =================== moibile design =================== */
+@media (max-width: 1700px) {
+  .xscroll-onSmall {
+    @apply !overflow-x-auto;
+  }
+  .col-onSmall {
+    @apply !flex-col w-full;
+  }
+  .info1Header-onSmall {
+    @apply flex justify-end items-center rounded-full px-5 min-w-[338px] h-[65px];
+  }
+  .info1span-onSmall {
+    @apply w-[14%];
+  }
+  .fullw-onSmall {
+    @apply !w-full;
+  }
 }

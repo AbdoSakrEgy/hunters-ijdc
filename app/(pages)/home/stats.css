@@ -31,3 +31,11 @@
 .stats-container2 .row-footer .iconArrow {
   @apply flex justify-center items-center w-[30px] h-[30px] rounded-full border-[3px] border-white;
 }
+/* =================== moibile design =================== */
+/* =================== moibile design =================== */
+/* =================== moibile design =================== */
+@media (max-width: 1700px) {
+  .xscroll-onSmall {
+    @apply !overflow-x-scroll;
+  }
+}

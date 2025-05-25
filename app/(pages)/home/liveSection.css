@@ -9,7 +9,7 @@
 }
 /* sec1 */
 .liveSection-sec1 {
-  @apply flex flex-wrap justify-between items-center rounded-full px-10 py-5 bg-white text-black;
+  @apply flex flex-wrap justify-between items-center gap-5 rounded-full px-10 py-5 bg-white text-black;
 }
 .liveSection-sec1 .live {
   @apply flex justify-center items-center gap-2 p-1 text-[16px] rounded-full w-[120px] hover:cursor-pointer text-white bg-[#FF0000];
@@ -54,4 +54,18 @@
 }
 .liveSection-sec2 .liveVideo {
   @apply bg-white rounded-lg w-full;
+}
+/* =================== moibile design =================== */
+/* =================== moibile design =================== */
+/* =================== moibile design =================== */
+@media (max-width: 1700px) {
+  .rounded-onSmall {
+    @apply !rounded-lg;
+  }
+  .controls-onSmall{
+    @apply !flex-col !w-full;
+  }
+  .wfull-onSmall{
+    @apply !w-full;
+  }
 }

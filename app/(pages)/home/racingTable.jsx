@@ -3,7 +3,6 @@ import Image from "next/image";
 import "./racingTable.css";
 import { raceData } from "./data";
 import { months } from "./data";
-import { daysOfMonth } from "./data";
 import { useState } from "react";
 
 export default function RacingTable() {
@@ -30,14 +29,14 @@ export default function RacingTable() {
     <main className="racing-container1" data-aos="fade-up">
       <main className="racing-container2">
         <div className="racing-sec1">
-          <div className="main-title">رزمانة السباقات</div>
+          <div className="main-title text-onSmall">رزمانة السباقات</div>
         </div>
         <div className="racing-sec2">
           <div className="table-body">
             {raceData[1][2025]["01"]["01"].map((element, index) => (
               <div key={index} className="table-cell relative">
-                <div className="date">{element.id}</div>
-                <div className="day">{element.day}</div>
+                <div className="date text-onSmall">{element.id}</div>
+                <div className="day text-onSmall">{element.day}</div>
                 {/* ----------- */}
                 <div className="race-container">
                   <button
@@ -114,8 +113,8 @@ export default function RacingTable() {
             ))}
           </div>
           <div className="table-header">
-            <div className="year">{year}</div>
-            <div className="month">{months[month - 1]}</div>
+            <div className="year text-onSmall">{year}</div>
+            <div className="month text-onSmall">{months[month - 1]}</div>
             <div className="controls">
               <button onClick={prevtMonth} className="prev">
                 <Image
@@ -135,7 +134,7 @@ export default function RacingTable() {
               </button>
             </div>
             <hr />
-            <div className="title">الأحداث</div>
+            <div className="title text-onSmall">الأحداث</div>
           </div>
         </div>
       </main>

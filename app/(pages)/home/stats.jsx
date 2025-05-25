@@ -4,7 +4,7 @@ import "./stats.css";
 export default function Stats() {
   return (
     <main className="stats-container1" data-aos="fade-up">
-      <main className="stats-container2">
+      <main className="stats-container2 xscroll-onSmall">
         {/* row-title */}
         <div className="row-title">
           <div>يوم</div>&nbsp;

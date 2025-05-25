@@ -12,9 +12,9 @@ export default function SelectedHorse() {
             <div className="number">03</div>
           </div>
         </div>
-        <div className="selectedHorse-sec2">
-          <div className="info1">
-            <div className="header">
+        <div className="selectedHorse-sec2 col-onSmall">
+          <div className="info1 xscroll-onSmall">
+            <div className="header info1Header-onSmall ">
               <span>معيار</span>
               <span>1-2-3%</span>
               <span>الفوز%</span>
@@ -69,8 +69,8 @@ export default function SelectedHorse() {
               <span></span>
             </div>
           </div>
-          <div className="info2">
-            <div className="header">
+          <div className="info2 fullw-onSmall">
+            <div className="header fullw-onSmall">
               <div className="">
                 <span className="text-black">سجل</span> : 23 بداية : 0-1-16
                 &nbsp; 4.16 مليون دولار
@@ -100,7 +100,7 @@ export default function SelectedHorse() {
               <span>المالك</span>
             </div>
           </div>
-          <div className="info3">
+          <div className="info3 fullw-onSmall">
             <div className="header"> التقييم العام: 83</div>
             <div className="row">
               <span>5/2</span>

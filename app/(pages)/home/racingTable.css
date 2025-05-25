@@ -90,3 +90,11 @@
 .racing-sec2 .table-header .title {
   @apply flex justify-center items-center w-full h-[163px] pb-3 text-[25px] text-[#177245] border-t-1 border-[#E3E3E3];
 }
+/* =================== moibile design =================== */
+/* =================== moibile design =================== */
+/* =================== moibile design =================== */
+@media (max-width: 1700px) {
+  .text-onSmall {
+    @apply !text-sm;
+  }
+}
