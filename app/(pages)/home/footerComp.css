@@ -5,11 +5,11 @@
   @apply flex justify-center items-center;
 }
 .footerComp-container2 {
-  @apply flex flex-col pt-20 px-32 w-full bg-black text-white;
+  @apply flex flex-col pt-20 w-full bg-black text-white;
 }
 /* footerComp-sec1 */
 .footerComp-sec1 {
-  @apply flex justify-between items-center bg-[#000000E6];
+  @apply flex justify-between items-center w-full py-20 bg-[#000000E6];
 }
 .footerComp-sec1 .contact {
   @apply flex flex-col items-end;
@@ -39,13 +39,19 @@
 .footerComp-sec2 {
   @apply flex;
 }
-/* =================== moibile design =================== */
-/* =================== moibile design =================== */
-/* =================== moibile design =================== */
-@media (max-width: 1700px) {
-  .text-onSmall {
-    @apply !text-xs;
+/* =============================== mediam-design =============================== */
+/* =============================== mediam-design =============================== */
+/* =============================== mediam-design =============================== */
+@media only screen and (max-width: 1000px) {
+  .col-onMediam {
+    @apply !flex-col;
   }
+}
+
+/* =============================== mobile-design =============================== */
+/* =============================== mobile-design =============================== */
+/* =============================== mobile-design =============================== */
+@media only screen and (max-width: 700px) {
   .col-onSmall {
     @apply !flex-col;
   }

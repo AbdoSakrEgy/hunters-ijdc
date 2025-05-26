@@ -4,30 +4,55 @@
 .navbar-container1 {
   @apply flex justify-center items-center h-[133px] bg-[#008062] text-white;
 }
+
 .navbar-container2 {
-  @apply max-[1700]:px-10 flex justify-between items-center px-32 w-full;
+  @apply flex justify-between items-center w-full;
 }
+
 /* sec1 */
 .navbar-container1 .sec1 {
-  @apply flex justify-center items-center gap-5;
+  @apply flex justify-end items-center gap-5;
 }
+
 .navbar-container1 .link {
   @apply flex justify-center items-center gap-1 no-underline hover:cursor-pointer;
 }
+
 /* sec2 */
 .navbar-container1 .sec2 {
-  @apply flex justify-center items-center gap-10;
+  @apply flex justify-end items-center w-full gap-5;
 }
-/* =============================== mobile-design =============================== */
-/* =============================== mobile-design =============================== */
-/* =============================== mobile-design =============================== */
-@media (max-width: 1700px) {
-  .hide-on-small {
-    display: none !important;
+
+/* =============================== mediam-design =============================== */
+/* =============================== mediam-design =============================== */
+/* =============================== mediam-design =============================== */
+@media only screen and (max-width: 1000px) {
+  .hide-onMediam {
+    @apply !hidden;
+  }
+
+  .padding-onMediam {
+    @apply !px-3;
   }
 }
-@media (min-width: 1700px) {
-  .hide-on-larg {
-    display: none !important;
+
+/* =============================== mobile-design =============================== */
+/* =============================== mobile-design =============================== */
+/* =============================== mobile-design =============================== */
+@media only screen and (max-width: 700px) {
+  .hide-onMobile {
+    @apply !hidden;
+  }
+
+  .show-onMobile {
+    @apply !flex;
+  }
+
+  .fitw-onMobile {
+    @apply !w-fit;
+  }
+
+  .logo-onMobile {
+    @apply flex w-[130px];
   }
 }

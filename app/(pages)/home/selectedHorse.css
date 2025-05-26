@@ -5,7 +5,7 @@
   @apply flex justify-center items-center;
 }
 .selectedHorse-container2 {
-  @apply max-[1700]:px-10 flex flex-col items-end gap-10 px-32 w-full py-[62px] bg-[#F2F2F2] text-black;
+  @apply flex flex-col items-end gap-10 w-full py-[62px] bg-[#F2F2F2] text-black;
 }
 /* selectedHorse-sec1 */
 .selectedHorse-sec1 {

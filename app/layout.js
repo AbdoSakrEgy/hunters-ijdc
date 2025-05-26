@@ -1,4 +1,5 @@
 import "./globals.css";
+import FooterComp from "./(pages)/home/footerComp";
 
 export const metadata = {
   title: "Hunters",
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
       <body className="antialiased h-full bg-white">
         <Navbar />
         {children}
+        <FooterComp />
       </body>
     </html>
   );

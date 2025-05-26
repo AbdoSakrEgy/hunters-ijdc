@@ -10,12 +10,12 @@ export default function FooterComp() {
       data-aos="fade-up"
     >
       <main className="footerComp-container2 flex flex-col w-full text-white">
-        <div className="max-[1700]:px-3 footerComp-sec1 flex max-[1700]:flex-wrap justify-between items-center w-full py-20 px-32 bg-[#000000E6]">
-          <div className="contact max-[1700]:w-full  max-[1700]:items-center flex flex-col items-end gap-3">
+        <div className="footerComp-sec1 max-[1000]:flex-col-reverse max-[1000]:gap-10 flex justify-between items-center w-full py-20 bg-[#000000E6]">
+          <div className="contact max-[1000]:w-full max-[700]:items-center flex flex-col items-end gap-3">
             <div className="title text-[24px]">النشرة البريدية</div>
             <div className="subTitle text-[17px]">النص أو الوصف يكتب هنا</div>
-            <div className="emailSec max-[1700]:!flex-col-reverse flex justify-end items-center gap-3">
-              <div className="send flex justify-center items-center rounded-lg w-[150px] h-[55px] bg-[#008062]">
+            <div className="emailSec max-[700]:flex-col-reverse flex justify-end items-center gap-3">
+              <div className="send max-[1000]:w-full flex justify-center items-center rounded-lg w-[150px] h-[55px] bg-[#008062]">
                 إشترك
               </div>
               <input
@@ -26,8 +26,8 @@ export default function FooterComp() {
             </div>
           </div>
           <div className="about flex flex-col gap-10 w-full">
-            <div className="socials flex justify-end items-center gap-10">
-              <div className="socials max-[1700]:justify-center max-[1700]:w-full max-[1700]:mt-5 flex justify-end items-center gap-10">
+            <div className="socials max-[700]:flex-col-reverse flex justify-end items-center gap-10">
+              <div className="socials flex justify-end items-center gap-10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -85,15 +85,9 @@ export default function FooterComp() {
                   </g>
                 </svg>
               </div>
-              <Image
-                src="/assets/logo.svg"
-                alt="img"
-                width={193}
-                height={58}
-                className="max-[1700]:!hidden"
-              />
+              <Image src="/assets/logo.svg" alt="img" width={193} height={58} />
             </div>
-            <div className="text-onSmall max-[1700]:!flex-col  max-[1700]:p-0 links flex justify-end items-center pr-20 gap-10 text-[20px]">
+            <div className="links flex flex-wrap justify-end items-center gap-5 text-[20px]">
               <Link href={`/contact-us`}>اتصل بنا</Link>
               <Link href={`/live-broadcast`}>البث المباشر</Link>
               <Link href={`/competitions`}>المسابقات</Link>
@@ -102,7 +96,7 @@ export default function FooterComp() {
             </div>
           </div>
         </div>
-        <div className="max-[1700]:!text-xs max-[1700]:!flex-col max-[1700]:px-10 footerComp-sec2 flex justify-between items-center text-[16px] text-white h-[54px] px-32 bg-black">
+        <div className="footerComp-sec2 max-[700]:flex-col flex justify-between items-center text-[14px] text-white py-5 bg-black">
           <div>سياسة الخصوصية | أحكام وشروط | ميثاق العملاء | ادوات الموقع</div>
           <div>جميع الحقوق محفوظة</div>
         </div>

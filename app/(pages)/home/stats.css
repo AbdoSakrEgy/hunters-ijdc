@@ -5,7 +5,7 @@
   @apply flex justify-center items-center;
 }
 .stats-container2 {
-  @apply max-[1700]:px-10 flex flex-col py-20 px-32 w-full overflow-x-scroll overflow-hidden;
+  @apply flex flex-col py-20 w-full overflow-x-scroll overflow-hidden;
 }
 /* row-title */
 .stats-container2 .row-title {
