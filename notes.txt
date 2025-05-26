@@ -1,4 +1,4 @@
--why you downloaded dasiyui package ?
+-why you downloaded dasiy-ui package ?
 -you have to delete unused files try this link:
     https://hunters-ijdc.vercel.app/globe.svg
 -using typescript is mush better
@@ -9,3 +9,5 @@
 -search for containers in tailwindcss ?
 -why u did not use ui package?
 -why home page is client side ?
+ui should be pixel perfect ( review the live with adobe xd)
+-not responsive 
