@@ -5,3 +5,4 @@ api base url : https://mayadeen-api.wovenclouds.com/api
 endpoint : /api/race
 
 filter : dateFrom , dateTo
+https://mayaden.wovenclouds.com/ar
