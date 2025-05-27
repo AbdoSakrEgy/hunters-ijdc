@@ -9,8 +9,8 @@ export default function FooterComp() {
       className="footerComp-container1 flex justify-center items-center"
       data-aos="fade-up"
     >
-      <main className="footerComp-container2 flex flex-col w-full text-white">
-        <div className="footerComp-sec1 max-[1000]:flex-col-reverse max-[1000]:gap-10 flex justify-between items-center w-full py-20 bg-[#000000E6]">
+      <main className="footerComp-container2 flex flex-col w-full text-white bg-black">
+        <div className="footerComp-sec1 max-[1000]:flex-col-reverse max-[1000]:gap-10 flex justify-between items-center w-full py-20 bg-black">
           <div className="contact max-[1000]:w-full max-[700]:items-center flex flex-col items-end gap-3">
             <div className="title text-[24px]">النشرة البريدية</div>
             <div className="subTitle text-[17px]">النص أو الوصف يكتب هنا</div>

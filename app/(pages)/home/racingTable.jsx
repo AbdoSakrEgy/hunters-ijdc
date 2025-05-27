@@ -58,16 +58,14 @@ function formatTimeRange(startIso, endIso) {
 export default function RacingTable() {
   // State to track the start date of the current week being viewed
   const [weekStart, setWeekStart] = useState(getCurrentWeekStart());
-
-  // Get the dates for the current week
   const currentWeek = getWeekDates(weekStart);
-
   // State to store races fetched from API
   const [races, setRaces] = useState([]);
 
-  // Fetch races from API on mount
+  // Fetch races for the current week using pagination (?dateFrom=)
   useEffect(() => {
-    fetch("https://mayadeen-api.wovenclouds.com/api/race")
+    const dateFrom = weekStart.toISOString().split("T")[0];
+    fetch(`https://mayadeen-api.wovenclouds.com/api/race?dateFrom=${dateFrom}`)
       .then((res) => res.json())
       .then((data) => {
         // Ensure races is always an array
@@ -75,13 +73,12 @@ export default function RacingTable() {
           setRaces(data);
         } else if (Array.isArray(data?.data)) {
           setRaces(data.data);
-          console.log(data.data[0]);
         } else {
           setRaces([]);
         }
       })
       .catch(() => setRaces([]));
-  }, []);
+  }, [weekStart]);
 
   // Helper: check if a date has races
   function hasRaceOnDate(date) {
@@ -99,12 +96,8 @@ export default function RacingTable() {
   // Helper: get all races for a given date
   function getRacesOnDate(date) {
     const d = date.toISOString().split("T")[0];
-    const raceArr = Array.isArray(races?.data)
-      ? races.data
-      : Array.isArray(races)
-      ? races
-      : [];
-    return raceArr.filter((race) => race?.date?.split("T")[0] === d);
+    // races is now always an array
+    return races.filter((race) => race?.date?.split("T")[0] === d);
   }
 
   // Function to go to the next week
@@ -172,7 +165,7 @@ export default function RacingTable() {
                             justifyContent: "center",
                             alignItems: "flex-end",
                             gap: "0.75rem",
-                            padding: "0.5rem", // Overrides previous p-3
+                            padding: "1rem", // Overrides previous p-3
                             width: "100%", // Overrides previous w-fit
                             borderRadius: "0.5rem",
                             boxShadow: "0 1px 2px 0 rgba(0, 0, 0, 0.05)", // Overrides previous shadow-2xl
