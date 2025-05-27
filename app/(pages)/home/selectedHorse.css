@@ -33,27 +33,36 @@
   @apply flex justify-end items-center rounded-full px-5 text-[20px] min-w-[338px] h-[42px] bg-white;
 }
 .selectedHorse-sec2 .row span {
-  @apply min-w-[109px];
+  @apply min-w-[135px];
 }
-/* selectedHorse-sec2 info1*/
-.selectedHorse-sec2 .info1 {
-  @apply w-full;
+/* selectedHorse-sec2 Ttable*/
+.selectedHorse-sec2 .TtableContainer {
+  @apply w-full overflow-auto;
 }
-.selectedHorse-sec2 .info1 .header {
-  @apply flex justify-around items-center text-[20px] font-bold w-[692px];
+.selectedHorse-sec2 .Ttable {
+  @apply w-full table-auto border-separate border-spacing-y-2 min-w-[733px];
 }
-.selectedHorse-sec2 .info1 .row {
-  @apply w-[692px] text-[#008062];
+.selectedHorse-sec2 .Ttable .Theader {
+  @apply rounded-full text-[20px] h-[65px];
 }
-.selectedHorse-sec2 .info1 .row span:nth-child(7) {
+.selectedHorse-sec2 .Ttable .Trow {
+  @apply rounded-full overflow-hidden px-5 text-[20px] h-[42px] bg-white text-[#008062];
+}
+.selectedHorse-sec2 .Ttable .Trow td:nth-child(7) {
   @apply text-black;
+}
+.selectedHorse-sec2 .Ttable .Trow td:last-child {
+  @apply pr-5 rounded-r-full;
+}
+.selectedHorse-sec2 .Ttable .Trow td:first-child {
+  @apply pl-5 rounded-l-full;
 }
 /* selectedHorse-sec2 info2*/
 .selectedHorse-sec2 .info2 {
   @apply flex;
 }
 .selectedHorse-sec2 .info2 .header {
-  @apply flex flex-col items-end w-[338px] text-[16px] px-5 text-[#008062] bg-white;
+  @apply flex flex-col items-center w-[338px] text-[16px] px-5 text-[#008062] bg-white;
 }
 .selectedHorse-sec2 .info2 .row span:nth-child(1) {
   @apply text-[#008062];
@@ -68,23 +77,29 @@
 .selectedHorse-sec2 .info3 .row span:nth-child(1) {
   @apply text-[#008062];
 }
-/* =================== moibile design =================== */
-/* =================== moibile design =================== */
-/* =================== moibile design =================== */
-@media (max-width: 1700px) {
-  .xscroll-onSmall {
+/* =============================== mediam-design =============================== */
+/* =============================== mediam-design =============================== */
+/* =============================== mediam-design =============================== */
+@media only screen and (max-width: 1700px) {
+  .xscroll-onMediam {
     @apply !overflow-x-auto;
   }
-  .col-onSmall {
+  .col-onMediam {
     @apply !flex-col w-full;
   }
-  .info1Header-onSmall {
+  .info1Header-onMediam {
     @apply flex justify-end items-center rounded-full px-5 min-w-[338px] h-[65px];
   }
-  .info1span-onSmall {
+  .info1span-onMediam {
     @apply w-[14%];
   }
-  .fullw-onSmall {
+  .fullw-onMediam {
     @apply !w-full;
   }
+}
+
+/* =============================== mobile-design =============================== */
+/* =============================== mobile-design =============================== */
+/* =============================== mobile-design =============================== */
+@media (max-width: 700px) {
 }

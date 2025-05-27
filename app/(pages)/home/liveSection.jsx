@@ -5,10 +5,10 @@ export default function LiveSection() {
   return (
     <main className="liveSection-container1" data-aos="fade-up">
       <main className="liveSection-container2">
-        <div className="liveSection-sec1 rounded-onSmall">
-          <div className="live wfull-onSmall">بث مباشر</div>
-          <div className="controlers controls-onSmall">
-            <div className="done wfull-onSmall">
+        <div className="liveSection-sec1 rounded-onMediam">
+          <div className="live">بث مباشر</div>
+          <div className="controlers controls-onMediam">
+            <div className="done wfull-onMediam">
               <Image
                 src="/assets/icons/left-arrow.svg"
                 alt="img"
@@ -17,7 +17,7 @@ export default function LiveSection() {
               />
               <span>تأكيد</span>
             </div>
-            <div className="prev wfull-onSmall">
+            <div className="prev wfull-onMediam">
               <Image
                 src="/assets/smallArrowDown.svg"
                 alt="img"
@@ -27,7 +27,7 @@ export default function LiveSection() {
               />
               <span>7 سباق</span>
             </div>
-            <div className="current wfull-onSmall">
+            <div className="current wfull-onMediam">
               <Image
                 src="/assets/smallArrowDown.svg"
                 alt="img"
@@ -36,7 +36,7 @@ export default function LiveSection() {
               />
               <span>6 سباق</span>
             </div>
-            <div className="next wfull-onSmall">
+            <div className="next wfull-onMediam">
               <Image
                 src="/assets/smallArrowDown.svg"
                 alt="img"
@@ -46,7 +46,7 @@ export default function LiveSection() {
               />
               <span>5 سباق</span>
             </div>
-            <div className="title">
+            <div className="title wfull-onMediam">
               <Image
                 src="/assets/smallArrowDown.svg"
                 alt="img"
@@ -57,8 +57,8 @@ export default function LiveSection() {
             </div>
           </div>
         </div>
-        <div className="liveSection-sec2">
-          <div className="horses wfull-onSmall">
+        <div className="liveSection-sec2 wrap-onSmall">
+          <div className="horses wfull-onMediam">
             <div className="raceInfo">
               <div className="relative bg-[#A2C77C] border-4 border-white rounded-full flex justify-between items-center gap-1 px-6 py-3 w-[338px] h-[87px]">
                 <div className="w-1/4">
@@ -99,42 +99,42 @@ export default function LiveSection() {
               </div>
             </div>
             <div className="list">
-              <div className="horse1 wfull-onSmall bg-[#EA3323]">
+              <div className="horse1 wfull-onMediam bg-[#EA3323]">
                 <span className="flex justify-center items-center text-2xl w-[60px] h-[60px] rounded-full bg-black text-white">
                   01
                 </span>
                 <span className="">بلاك هورس</span>
                 <span className="">2-1</span>
               </div>
-              <div className="horse1 wfull-onSmall bg-[#FFFFFF]">
+              <div className="horse1 wfull-onMediam bg-[#FFFFFF]">
                 <span className="flex justify-center items-center text-2xl w-[60px] h-[60px] rounded-full bg-black text-white">
                   02
                 </span>
                 <span className="">بلاك هورس</span>
                 <span className="">2-1</span>
               </div>
-              <div className="horse1 wfull-onSmall bg-[#0000F5]">
+              <div className="horse1 wfull-onMediam bg-[#0000F5]">
                 <span className="flex justify-center items-center text-2xl w-[60px] h-[60px] rounded-full bg-black text-white">
                   03
                 </span>
                 <span className="">بلاك هورس</span>
                 <span className="">2-1</span>
               </div>
-              <div className="horse1 wfull-onSmall bg-[#FFFF55]">
+              <div className="horse1 wfull-onMediam bg-[#FFFF55]">
                 <span className="flex justify-center items-center text-2xl w-[60px] h-[60px] rounded-full bg-black text-white">
                   04
                 </span>
                 <span className="">بلاك هورس</span>
                 <span className="">2-1</span>
               </div>
-              <div className="horse1 wfull-onSmall bg-[#377E23]">
+              <div className="horse1 wfull-onMediam bg-[#377E23]">
                 <span className="flex justify-center items-center text-2xl w-[60px] h-[60px] rounded-full bg-black text-white">
                   05
                 </span>
                 <span className="">بلاك هورس</span>
                 <span className="">2-1</span>
               </div>
-              <div className="horse1 wfull-onSmall bg-[#377E23]">
+              <div className="horse1 wfull-onMediam bg-[#377E23]">
                 <span className="flex justify-center items-center text-2xl w-[60px] h-[60px] rounded-full bg-black text-white">
                   06
                 </span>

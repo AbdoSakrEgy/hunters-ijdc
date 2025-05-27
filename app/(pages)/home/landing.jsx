@@ -22,7 +22,7 @@ export default function Landing() {
             />
             <div>إذهب إلى</div>
           </div>
-          <div className="info-viewer">
+          <div className="info-viewer wrap-onMediam">
             <div className="view1 card-onMobile animate__animated animate__fadeInUp">
               <div className="date">20/3/2025</div>
               <div className="main-title">عنوان رئيسى</div>

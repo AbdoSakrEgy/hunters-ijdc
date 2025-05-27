@@ -12,65 +12,71 @@ export default function SelectedHorse() {
             <div className="number">03</div>
           </div>
         </div>
-        <div className="selectedHorse-sec2 col-onSmall">
-          <div className="info1 xscroll-onSmall">
-            <div className="header info1Header-onSmall ">
-              <span>معيار</span>
-              <span>1-2-3%</span>
-              <span>الفوز%</span>
-              <span>العام الماضى</span>
-              <span>التقييم</span>
-              <span>التفاصيل</span>
-              <span>المعيار</span>
-            </div>
-            <div className="row">
-              <span></span>
-              <span>43</span>
-              <span>15</span>
-              <span>678</span>
-              <span>75</span>
-              <span>اسم المدرب</span>
-              <span>المدرب</span>
-            </div>
-            <div className="row">
-              <span></span>
-              <span>43</span>
-              <span>15</span>
-              <span>200</span>
-              <span>70</span>
-              <span></span>
-              <span></span>
-            </div>
-            <div className="row">
-              <span></span>
-              <span>43</span>
-              <span>15</span>
-              <span>678</span>
-              <span>75</span>
-              <span></span>
-              <span></span>
-            </div>
-            <div className="row">
-              <span></span>
-              <span>43</span>
-              <span>15</span>
-              <span>678</span>
-              <span></span>
-              <span>اسم المدرب</span>
-              <span>الخيال</span>
-            </div>
-            <div className="row">
-              <span></span>
-              <span>43</span>
-              <span>15</span>
-              <span>678</span>
-              <span></span>
-              <span>اسم المدرب</span>
-              <span></span>
-            </div>
+        <div className="selectedHorse-sec2 col-onMediam">
+          <div className="TtableContainer">
+            <table className="Ttable">
+              <thead className="Theader">
+                <tr>
+                  <th>معيار</th>
+                  <th>1-2-3%</th>
+                  <th>الفوز%</th>
+                  <th>العام الماضى</th>
+                  <th>التقييم</th>
+                  <th>التفاصيل</th>
+                  <th className="pr-5">المعيار</th>
+                </tr>
+              </thead>
+              <tbody className="">
+                <tr className="Trow">
+                  <td></td>
+                  <td>43</td>
+                  <td>15</td>
+                  <td>678</td>
+                  <td>75</td>
+                  <td>اسم المدرب</td>
+                  <td>المدرب</td>
+                </tr>
+                <tr className="Trow">
+                  <td></td>
+                  <td>43</td>
+                  <td>15</td>
+                  <td>678</td>
+                  <td>75</td>
+                  <td>اسم المدرب</td>
+                  <td>المدرب</td>
+                </tr>
+                <tr className="Trow">
+                  <td></td>
+                  <td>43</td>
+                  <td>15</td>
+                  <td>678</td>
+                  <td>75</td>
+                  <td>اسم المدرب</td>
+                  <td>المدرب</td>
+                </tr>
+                <tr className="Trow">
+                  <td></td>
+                  <td>43</td>
+                  <td>15</td>
+                  <td>678</td>
+                  <td>75</td>
+                  <td>اسم المدرب</td>
+                  <td>المدرب</td>
+                </tr>
+                <tr className="Trow">
+                  <td></td>
+                  <td>43</td>
+                  <td>15</td>
+                  <td>678</td>
+                  <td>75</td>
+                  <td>اسم المدرب</td>
+                  <td>المدرب</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div className="info2 fullw-onSmall">
-            <div className="header fullw-onSmall">
+          <div className="info2 fullw-onMediam">
+            <div className="header fullw-onMediam">
               <div className="">
                 <span className="text-black">سجل</span> : 23 بداية : 0-1-16
                 &nbsp; 4.16 مليون دولار
@@ -100,7 +106,7 @@ export default function SelectedHorse() {
               <span>المالك</span>
             </div>
           </div>
-          <div className="info3 fullw-onSmall">
+          <div className="info3 fullw-onMediam">
             <div className="header"> التقييم العام: 83</div>
             <div className="row">
               <span>5/2</span>

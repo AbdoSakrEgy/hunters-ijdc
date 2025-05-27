@@ -28,7 +28,7 @@
 
 /* info-viewer */
 .landing-container2 .info-viewer {
-  @apply flex justify-between w-full gap-5 mt-20 items-center flex-wrap;
+  @apply flex justify-between w-full gap-5 mt-20 items-center;
 }
 
 .landing-container2 .info-viewer .view1,
@@ -56,6 +56,9 @@
 @media only screen and (max-width: 1000px) {
   .padding-onMediam {
     @apply !px-3;
+  }
+  .wrap-onMediam {
+    @apply !flex-wrap;
   }
 }
 

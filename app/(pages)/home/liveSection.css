@@ -30,11 +30,11 @@
   @apply flex justify-center items-center gap-2 p-1 text-[16px] rounded-full w-[120px] hover:cursor-pointer border-2 border-[#F2F2F2];
 }
 .liveSection-sec1 .title {
-  @apply flex justify-around items-center gap-2 p-1 text-[16px] rounded-full w-[220px] hover:cursor-pointer border-2 border-[#F2F2F2];
+  @apply flex justify-center items-center gap-2 p-1 text-[16px] rounded-full w-[220px] hover:cursor-pointer border-2 border-[#F2F2F2];
 }
 /* sec2 */
 .liveSection-sec2 {
-  @apply flex max-[1700]:flex-wrap-reverse justify-between items-center gap-5;
+  @apply flex justify-between items-center gap-5;
 }
 .liveSection-sec2 .horses {
   @apply flex flex-col gap-10;
@@ -55,17 +55,26 @@
 .liveSection-sec2 .liveVideo {
   @apply bg-white rounded-lg w-full;
 }
-/* =================== moibile design =================== */
-/* =================== moibile design =================== */
-/* =================== moibile design =================== */
-@media (max-width: 1700px) {
-  .rounded-onSmall {
+/* =============================== mediam-design =============================== */
+/* =============================== mediam-design =============================== */
+/* =============================== mediam-design =============================== */
+@media only screen and (max-width: 1000px) {
+  .rounded-onMediam {
     @apply !rounded-lg;
   }
-  .controls-onSmall {
-    @apply !flex-col !w-full;
+  .controls-onMediam {
+    @apply !flex-col-reverse !w-full;
   }
-  .wfull-onSmall {
+  .wfull-onMediam {
     @apply !w-full;
+  }
+}
+
+/* =============================== mobile-design =============================== */
+/* =============================== mobile-design =============================== */
+/* =============================== mobile-design =============================== */
+@media only screen and (max-width: 700px) {
+  .wrap-onSmall{
+    @apply !flex-wrap-reverse
   }
 }

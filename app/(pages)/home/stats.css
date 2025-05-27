@@ -5,7 +5,7 @@
   @apply flex justify-center items-center;
 }
 .stats-container2 {
-  @apply flex flex-col py-20 w-full overflow-x-scroll overflow-hidden;
+  @apply flex flex-col py-20 w-full;
 }
 /* row-title */
 .stats-container2 .row-title {
@@ -13,7 +13,10 @@
 }
 /* row-data*/
 .stats-container2 .row-data {
-  @apply flex justify-between items-center rounded-full min-w-[1400px] h-[91px] px-10 text-[14px] bg-[#F2F2F2] text-black;
+  @apply flex justify-between items-center rounded-full w-full px-10 py-3 text-[14px] bg-[#F2F2F2] text-black;
+}
+.stats-container2 .row-data .groub {
+  @apply flex justify-between items-center gap-5 w-fit;
 }
 .stats-container2 .row-data .info {
   @apply flex flex-col items-end gap-1;
@@ -31,11 +34,20 @@
 .stats-container2 .row-footer .iconArrow {
   @apply flex justify-center items-center w-[30px] h-[30px] rounded-full border-[3px] border-white;
 }
-/* =================== moibile design =================== */
-/* =================== moibile design =================== */
-/* =================== moibile design =================== */
-@media (max-width: 1700px) {
-  .xscroll-onSmall {
-    @apply !overflow-x-scroll;
+/* =============================== mediam-design =============================== */
+/* =============================== mediam-design =============================== */
+/* =============================== mediam-design =============================== */
+@media only screen and (max-width: 1050px) {
+  .row-onMediam {
+    @apply !rounded-lg !flex-col !gap-5;
   }
+  .groub-onMediam {
+    @apply !flex-col;
+  }
+}
+
+/* =============================== mobile-design =============================== */
+/* =============================== mobile-design =============================== */
+/* =============================== mobile-design =============================== */
+@media only screen and (max-width: 700px) {
 }
