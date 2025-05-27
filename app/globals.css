@@ -39,3 +39,22 @@
 body {
   font-family: "CustomArabic", sans-serif;
 }
+
+/* Select each direct child of body with a class containing '-container2' */
+body [class*="-container2"] {
+  @apply px-32;
+}
+/* =============================== mediam-design =============================== */
+/* =============================== mediam-design =============================== */
+/* =============================== mediam-design =============================== */
+@media only screen and (max-width: 1300px) {
+  body [class*="-container2"] {
+    @apply !px-3;
+  }
+}
+
+/* =============================== mobile-design =============================== */
+/* =============================== mobile-design =============================== */
+/* =============================== mobile-design =============================== */
+@media only screen and (max-width: 700px) {
+}

@@ -18,7 +18,8 @@
     "gsap": "^3.13.0",
     "next": "15.3.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "rsuite": "^5.81.0"
   },
   "devDependencies": {
     "@iconify/react": "^6.0.0",

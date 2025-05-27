@@ -1,5 +1,7 @@
 import "./globals.css";
 import FooterComp from "./(pages)/home/footerComp";
+import "rsuite/dist/rsuite-no-reset.min.css";
+import { CustomProvider } from "rsuite";
 
 export const metadata = {
   title: "Hunters",
@@ -12,7 +14,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="antialiased h-full bg-white">
         <Navbar />
-        {children}
+        <CustomProvider>{children}</CustomProvider>
+
         <FooterComp />
       </body>
     </html>

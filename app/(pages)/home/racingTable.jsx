@@ -4,6 +4,7 @@ import "./racingTable.css";
 import { raceData } from "./data";
 import { months } from "./data";
 import { use, useState, useEffect } from "react";
+import { Dropdown, Avatar } from "rsuite";
 
 // Utility function to get week dates (Sunday to Saturday)
 function getWeekDates(startDate) {
@@ -119,6 +120,7 @@ export default function RacingTable() {
     prev.setDate(prev.getDate() - 7);
     setWeekStart(prev);
   }
+  const renderToggle = (props) => <div className="race" {...props}></div>;
 
   return (
     <main className="racing-container1" data-aos="fade-up">
@@ -137,6 +139,152 @@ export default function RacingTable() {
                     {date.toLocaleDateString("ar-EG", { weekday: "long" })}
                   </div>
                   <div className="race-container">
+                    {racesForDay.map((race, i) => (
+                      <Dropdown
+                        renderToggle={renderToggle}
+                        style={{ position: "relative" }}
+                      >
+                        <Dropdown.Item
+                          style={{
+                            position: "absolute",
+                            top: "5px",
+                            left: "5px",
+                            width: "fit-content",
+                          }}
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width={24}
+                            height={24}
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"
+                            ></path>
+                          </svg>
+                        </Dropdown.Item>
+                        <Dropdown.Item
+                          panel
+                          style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            justifyContent: "center",
+                            alignItems: "flex-end",
+                            gap: "0.75rem",
+                            padding: "0.5rem", // Overrides previous p-3
+                            width: "100%", // Overrides previous w-fit
+                            borderRadius: "0.5rem",
+                            boxShadow: "0 1px 2px 0 rgba(0, 0, 0, 0.05)", // Overrides previous shadow-2xl
+                            fontSize: "20px",
+                            color: "black",
+                            backgroundColor: "white",
+                          }}
+                        >
+                          {/*  */}
+                          <div className="name">{race.name}</div>
+                          <div className="classification">
+                            {race.classification}
+                          </div>
+                          <div className="dateTime col-onSmall">
+                            <div className="date w-[170px]">
+                              {formatTimeRange(race.startTime, race.endTime)}
+                            </div>
+                            <Image
+                              src="/assets/icons/clock.svg"
+                              alt="img"
+                              width={20}
+                              height={20}
+                            />
+                            <div className="time w-[100px]">
+                              {formatDateToArabic(race.date)}
+                            </div>
+                            <Image
+                              src="/assets/icons/calendar.svg"
+                              alt="img"
+                              width={20}
+                              height={20}
+                            />
+                          </div>
+                          <div className="distance">
+                            <span className="w-20 text-right text-[#177245]">
+                              {race.averageDistance}
+                            </span>
+                            <span className="w-20 text-right">المسافة </span>
+                          </div>
+                          <div className="type">
+                            <span className="w-fit text-right text-[#177245]">
+                              {race.floor}
+                            </span>
+                            <span className="w-20 text-right">النوع </span>
+                          </div>
+                          <div className="age">
+                            <span className="w-20 text-right">سنة </span>
+                            <span className="w-fit text-right text-[#177245]">
+                              {race.averageAge}
+                            </span>
+                            <span className="w-20 text-right">العمر </span>
+                          </div>
+                          <div className="award">
+                            <span className="w-32 text-right text-[#177245]">
+                              {race.averagePrize}
+                            </span>
+                            <span className="w-20 text-right">الجائزة </span>
+                          </div>
+                          <div className="award">
+                            <div className="custom-btn">
+                              <Image
+                                src="/assets/icons/left-arrow.svg"
+                                alt="img"
+                                width={15}
+                                height={15}
+                              />
+                              <div>تفاصيل</div>
+                            </div>
+                          </div>
+                          {/*  */}
+                        </Dropdown.Item>
+                      </Dropdown>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          <div className="table-header">
+            <div className="year">{weekStart.getFullYear()}</div>
+            <div className="month">{months[weekStart.getMonth()]}</div>
+            <div className="controls">
+              <button className="prev" onClick={goToPrevWeek}>
+                <Image
+                  src="/assets/icons/left-arrow-circle.svg"
+                  alt="img"
+                  width={33}
+                  height={33}
+                  className="btn-onSmall"
+                />
+              </button>
+              <button className="next" onClick={goToNextWeek}>
+                <Image
+                  src="/assets/icons/right-arrow-circle.svg"
+                  alt="img"
+                  width={33}
+                  height={33}
+                  className="btn-onSmall"
+                />
+              </button>
+            </div>
+            <hr />
+            <div className="title hide-onSmall">الأحداث</div>
+          </div>
+        </div>
+      </main>
+    </main>
+  );
+}
+{
+  /* 
+  <div className="race-container">
                     {racesForDay.map((race, i) => (
                       <div
                         className="dropdown"
@@ -221,93 +369,5 @@ export default function RacingTable() {
                       </div>
                     ))}
                   </div>
-                </div>
-              );
-            })}
-          </div>
-          <div className="table-header">
-            <div className="year">{weekStart.getFullYear()}</div>
-            <div className="month">{months[weekStart.getMonth()]}</div>
-            <div className="controls">
-              <button className="prev" onClick={goToPrevWeek}>
-                <Image
-                  src="/assets/icons/left-arrow-circle.svg"
-                  alt="img"
-                  width={33}
-                  height={33}
-                />
-              </button>
-              <button className="next" onClick={goToNextWeek}>
-                <Image
-                  src="/assets/icons/right-arrow-circle.svg"
-                  alt="img"
-                  width={33}
-                  height={33}
-                />
-              </button>
-            </div>
-            <hr />
-            <div className="title hide-onSmall">الأحداث</div>
-          </div>
-        </div>
-      </main>
-    </main>
-  );
-}
-{
-  /* <div className="modal-box race-details">
-                      <div className="name">{element.name}</div>
-                      <div className="classification">
-                        {element.classification}
-                      </div>
-                      <div className="dateTime">
-                        <div className="time">{element.time}</div>
-                        <Image
-                          src="/assets/icons/clock.svg"
-                          alt="img"
-                          width={20}
-                          height={20}
-                        />
-                        <div className="date">{element.date}</div>
-                        <Image
-                          src="/assets/icons/calendar.svg"
-                          alt="img"
-                          width={20}
-                          height={20}
-                        />
-                      </div>
-                      <div className="distance">
-                        <span className="w-20 text-right text-[#177245]">
-                          {element.distance}
-                        </span>
-                        <span className="w-20 text-right">المسافة </span>
-                      </div>
-                      <div className="type">
-                        <span className="w-20 text-right text-[#177245]">
-                          {element.type}
-                        </span>
-                        <span className="w-20 text-right">النوع </span>
-                      </div>
-                      <div className="age">
-                        <span className="w-20 text-right text-[#177245]">
-                          {element.age}
-                        </span>
-                        <span className="w-20 text-right">العمر </span>
-                      </div>
-                      <div className="award">
-                        <div className="custom-btn">
-                          <Image
-                            src="/assets/icons/left-arrow.svg"
-                            alt="img"
-                            width={15}
-                            height={15}
-                          />
-                          <div>تفاصيل</div>
-                        </div>
-                        <span className="w-32 text-right text-[#177245]">
-                          {element.award}
-                        </span>
-                        <span className="w-20 text-right">الجائزة </span>
-                      </div>
-                    </div> */
+  */
 }
