@@ -20,7 +20,7 @@
 
 /* sec2 */
 .navbar-container1 .sec2 {
-  @apply flex justify-end items-center w-full gap-5;
+  @apply flex justify-between items-center w-full gap-5;
 }
 
 /* =============================== mediam-design =============================== */
@@ -54,5 +54,9 @@
 
   .logo-onMobile {
     @apply flex w-[130px];
+  }
+
+  .navbar-container1 .link div {
+    @apply text-xs;
   }
 }

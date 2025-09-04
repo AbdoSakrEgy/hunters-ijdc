@@ -246,7 +246,7 @@ export default function RacingTable() {
           </div>
           <div className="table-header">
             <div className="year">{weekStart.getFullYear()}</div>
-            <div className="month">{months[weekStart.getMonth()]}</div>
+            <div className="month titlesize-onSmall daysize-onSmall">{months[weekStart.getMonth()]}</div>
             <div className="controls">
               <button className="prev" onClick={goToPrevWeek}>
                 <Image

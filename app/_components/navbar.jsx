@@ -10,7 +10,7 @@ export default function Navbar() {
       <main className="navbar-container2 padding-onMediam">
         <div className="sec1">
           <div className="link"></div>
-          <div className="link">
+          <div className="link hide-onMobile">
             <div>حسابى</div>
             <Image
               src="/assets/icons/account.svg"
@@ -19,7 +19,7 @@ export default function Navbar() {
               height={15}
             />
           </div>
-          <div className="link">
+          <div className="link hide-onMobile">
             <div>...بحث</div>
             <Image
               src="/assets/icons/search.svg"
@@ -30,20 +30,20 @@ export default function Navbar() {
           </div>
         </div>
         <div className="sec2">
-          <div className="flex justify-end items-center gap-5 w-full">
-            <Link href={`/contact-us`} className="link hide-onMobile">
+          <div className="flex justify-end items-center gap-5 w-full hide-onMobile">
+            <Link href={`/contact-us`} className="link">
               اتصل بنا
             </Link>
-            <Link href={`/live-broadcast`} className="link hide-onMobile">
+            <Link href={`/live-broadcast`} className="link">
               البث المباشر
             </Link>
-            <Link href={`/competitions`} className="link hide-onMobile">
+            <Link href={`/competitions`} className="link">
               المسابقات
             </Link>
-            <Link href={`/services`} className="link hide-onMobile">
+            <Link href={`/services`} className="link">
               الخدمات
             </Link>
-            <Link href={`/about-us`} className="link hide-onMobile">
+            <Link href={`/about-us`} className="link">
               عن ميدان
             </Link>
           </div>
@@ -51,7 +51,9 @@ export default function Navbar() {
             href={`/home`}
             className="link animate__animated animate__backInDown"
           >
-            <Image src="/assets/logo.svg" alt="img" width={193} height={58} />
+            <div className="w-[150px]">
+              <Image src="/assets/logo.svg" alt="img" width={193} height={58} />
+            </div>{" "}
           </Link>
           <button
             onClick={() => document.getElementById("my_modal_3").showModal()}
@@ -72,11 +74,12 @@ export default function Navbar() {
           {/* dialog content */}
           <dialog id="my_modal_3" className="modal">
             <div className="modal-box flex flex-col justify-start p-0 items-center h-full w-full bg-black text-white">
-              <div className="flex justify-between items-center w-full p-5 border-b border-gray-800">
+              <div className="flex flex-row-reverse justify-between items-center w-full p-5 border-b border-gray-800">
                 <div className="modal-action">
                   <form method="dialog">
                     <button>
                       <svg
+                        className="cursor-pointer"
                         xmlns="http://www.w3.org/2000/svg"
                         width={35}
                         height={35}

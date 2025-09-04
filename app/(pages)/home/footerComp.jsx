@@ -10,7 +10,7 @@ export default function FooterComp() {
       data-aos="fade-up"
     >
       <main className="footerComp-container2 flex flex-col w-full text-white bg-black">
-        <div className="footerComp-sec1 max-[1000]:flex-col-reverse max-[1000]:gap-10 flex justify-between items-center w-full py-20 bg-black">
+        <div className="footerComp-sec1 max-[1000]:flex-col-reverse gap-10 flex justify-between items-center w-full py-20 bg-black">
           <div className="contact max-[1000]:w-full max-[700]:items-center flex flex-col items-end gap-3">
             <div className="title text-[24px]">النشرة البريدية</div>
             <div className="subTitle text-[17px]">النص أو الوصف يكتب هنا</div>
@@ -87,7 +87,7 @@ export default function FooterComp() {
               </div>
               <Image src="/assets/logo.svg" alt="img" width={193} height={58} />
             </div>
-            <div className="links flex flex-wrap justify-end items-center gap-5 text-[20px]">
+            <div className="links flex flex-wrap justify-between items-center gap-5 text-[20px]">
               <Link href={`/contact-us`}>اتصل بنا</Link>
               <Link href={`/live-broadcast`}>البث المباشر</Link>
               <Link href={`/competitions`}>المسابقات</Link>
